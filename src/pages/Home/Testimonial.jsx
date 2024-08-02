@@ -3,7 +3,7 @@ import Carousel from '../../components/Carousel'
 
 const Testimonial = () => {
   return (
-    <div className='max-w-[1024px] mx-auto h-[100vh] mt-[100px] px-4'>
+    <div className='max-w-[1024px] mx-auto  mt-[100px] px-4'>
         <div className="relative bg-[#E8E8E8] bg-opacity-70 text-white w-[100px] h-[23px]  mt-10">
             <div
               className="absolute left-0 top-0 h-full w-1"

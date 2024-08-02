@@ -25,7 +25,7 @@ const Project = () => {
             <div className='flex justify-center items-center py-4'>
                 <h1 className='text-[#1C1F35] text-[24px] md:text-[35px] md:mt-0 font-bold'>Transporting Across The World</h1>
             </div>
-        <div className='grid grid-cols-1 md:grid-cols-5 gap-2'>
+        <div className='grid grid-cols-1 md:grid-cols-5 gap-2 '>
         {data && data.map((item, index) => (
           <Card
             key={index}

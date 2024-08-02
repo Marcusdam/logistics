@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom'
 
 const AboutUs = () => {
   return (
-    <div className='max-w-[1024px] mx-auto mt-[100px]'>
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-2 items-center px-4 md:px-0'>
+    <div className='max-w-[1024px] mx-auto mt-[100px] '>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-2 items-center px-4 lg:px-0'>
             <div className='relative'>
                 <img src={AboutImg1} alt="" className='w-[80%]' />
                 <div className='absolute -bottom-20 right-0  bg-white p-3'>

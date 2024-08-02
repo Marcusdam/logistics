@@ -18,8 +18,8 @@ const WhyUsContent = () => {
     ];
 
     return (
-        <div className="relative max-w-[1024px] mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-10 gap-8 items-center">
+        <div className="relative max-w-[1024px] mt-[100px] mx-auto px-4 lg:px:0 z-0">
+            <div className="grid lg:grid-cols-10 gap-8 items-center">
                 <div className="relative md:col-span-6">
                     <img src={Photo} alt="img" className="w-full h-auto" />
                     <div className="absolute bottom-0 right-0 md:right-20 w-full md:w-[417px]">

@@ -1,20 +1,18 @@
-import React from 'react'
-// import Nav from '../Navbar/NavBarMenu'
-import BannerContent from './BannerContent'
-import NavBarMenu from '../Navbar/NavBarMenu'
+// import React from 'react'
+// import BannerContent from './BannerContent'
 
 
-const Banner = () => {
-  return (
-    <div>
-        <div className='h-[100vh] bg-[url("assets/images/Photo.png")] bg-cover'>
-        <div className='bg-[#091242] bg-opacity-40 '>
-            
-        <NavBarMenu/>
-        </div>
-        <BannerContent/>
-        </div>
-    </div>
-  )
-}
-export default Banner
+
+// const Banners = () => {
+//   return (
+//     <div>
+//         <div className='h-[100vh] bg-[url("assets/images/Homebanner.png")] bg-cover mt-[120px]'>
+//         <div className='bg-[#091242] bg-opacity-40 h-[100vh]'>
+//         <BannerContent/>
+//         </div>
+       
+//         </div>
+//     </div>
+//   )
+// }
+// export default Banners

@@ -3,8 +3,9 @@ import React from 'react'
 const Pricing = () => {
   return (
     <>
-    <section className='max-w-[1024px] mx-auto mt-[100px]'>
-        <div className='flex flex-col items-center'>
+    <section className='max-w-[1024px] mx-auto mt-[100px] px-4 lg:px-0'>
+       <div>
+       <div className='flex flex-col items-center'>
   <div className="relative inline-block px-2 bg-[#E8E8E8] bg-opacity-70 text-white mt-10">
     <div
       className="absolute left-0 top-0 h-full w-1"
@@ -33,7 +34,7 @@ const Pricing = () => {
                     <div className=''>
                         <h1 className=' flex justify-center text-[30px] font-semibold '>Basic</h1>
                         <div className='flex justify-center'>
-                        <p className=' text-[60px] text-[#1C1F35] '>$39<span className='text-[22px] text-[#1C1F35] font-rubik'>/ month</span></p>
+                        <p className=' text-[35px] lg:text-[60px] text-[#1C1F35] '>$39<span className='text-[22px] text-[#1C1F35] font-rubik'>/ month</span></p>
                         </div>
                     </div>
                     <div >
@@ -54,7 +55,7 @@ const Pricing = () => {
                     <div className=''>
                         <h1 className=' flex justify-center text-[30px] font-semibold '>Standard</h1>
                         <div className='flex justify-center'>
-                        <p className=' text-[60px] text-white '>$59<span className='text-[22px] '>/ month</span></p>
+                        <p className=' text-[35px] lg:text-[60px] text-white '>$59<span className='text-[22px] '>/ month</span></p>
                         </div>
                     </div>
                     <div >
@@ -75,7 +76,7 @@ const Pricing = () => {
                     <div className=''>
                         <h1 className=' flex justify-center text-[30px] font-semibold '>Premium</h1>
                         <div className='flex justify-center'>
-                        <p className=' text-[60px] text-[#1C1F35] '>$89<span className='text-[22px] text-[#1C1F35] font-rubik'>/ month</span></p>
+                        <p className=' text-[35px] lg:text-[60px] text-[#1C1F35] '>$89<span className='text-[22px] text-[#1C1F35] font-rubik'>/ month</span></p>
                         </div>
                     </div>
                     <div >
@@ -96,6 +97,7 @@ const Pricing = () => {
                 
             </div>
         </div>
+       </div>
     </section>
     </>
   )

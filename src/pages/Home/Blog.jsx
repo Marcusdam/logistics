@@ -1,5 +1,6 @@
 import React from 'react'
-import BlogContent from './BlogContent'
+import BlogContent from './BlogContent';
+
 
 const Blog = () => {
   return (
@@ -25,6 +26,7 @@ const Blog = () => {
             <BlogContent/>
 
         </div>
+        
     </section>
   )
 }

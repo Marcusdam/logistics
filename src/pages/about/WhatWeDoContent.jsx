@@ -31,7 +31,7 @@ const services =[
 ]
 
   return (
-    <div className='max-w-[1024px] mx-auto px-4 md:px-0 py-10'>
+    <div className='max-w-[1024px] mx-auto px-4 lg:px-0 py-10'>
         <div className='flex flex-col items-center'>
   <div className="relative inline-block px-2 bg-[#E8E8E8] bg-opacity-70 text-white mt-10">
     <div
@@ -56,7 +56,7 @@ const services =[
 </div>
 
 
-        <div className='grid grid-cols-1 md:grid-cols-3 gap-6 items-center '>
+        <div className='grid lg:grid-cols-3 gap-6 items-center '>
       {services.map((item, index) => (
         <div key={index}>
           <div>

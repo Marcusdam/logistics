@@ -4,7 +4,7 @@ import WareHouseIcon from "../../assets/images/Icon (7).png";
 
 const Services = () => {
   return (
-    <div className="max-w-[1024px] mx-auto md:mt-[100px] px-4">
+    <div className="max-w-[1024px] mx-auto mt-[100px] px-4">
       <div className="flex flex-col md:flex-row gap-8">
         <div className="">
           <div className="relative bg-[#E8E8E8] bg-opacity-70 text-white w-[100px] h-[23px]  mt-10">

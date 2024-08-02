@@ -12,7 +12,7 @@ import Photo4 from "../../assets/images/4.png"
 const ContactContent = () => {
     
   return (
-    <div className="max-w-[1024px] mx-auto " >
+    <div className="max-w-[1024px] mx-auto px-8 lg:px-0" >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center pt-10 m-4 md:m-0">
         <div className="space-y-2">
           
@@ -72,7 +72,7 @@ const ContactContent = () => {
           
         </div>
         <div className="form">
-        <div className="max-w-lg mx-auto p-4 ">
+        <div className="max-w-lg mx-auto p-4  ">
       
       <form className=" space-y-4">
         <div className=" grid grid-cols-1 md:grid-cols-2 gap-4">

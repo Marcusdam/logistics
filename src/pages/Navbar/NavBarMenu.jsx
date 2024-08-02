@@ -20,7 +20,8 @@ const NavBarMenu = () => {
     setNav(!nav)
   }
     return (
-    <div className='max-w-[1024px] mx-auto flex justify-between  text-white text-[14px]'>
+    <div className='bg-black bg-opacity-40 z-10'>
+      <div className='max-w-[1024px] mx-auto flex justify-between  text-white text-[14px]'>
       <div className='nav'>
         <ul className='hidden lg:flex justify-between gap-4 pt-3'>
           <Link to={'/'} className='cursor-pointer'>Home</Link>
@@ -38,30 +39,33 @@ const NavBarMenu = () => {
           className="w-52 rounded-md border border-white/5 bg-[#111C55] p-1 mt-4 text-sm/6 text-white transition duration-100 ease-out [--anchor-gap:var(--spacing-1)] focus:outline-none data-[closed]:scale-95 data-[closed]:opacity-0"
         >
           <MenuItem>
-            <button className="group flex w-full items-center gap-2 rounded-lg py-1.5 px-3 data-[focus]:bg-white/10">
-              {/* <PencilIcon className="size-4 fill-white/30" /> */}
-              Edit
-              <kbd className="ml-auto hidden font-sans text-xs text-white/50 group-data-[focus]:inline">⌘E</kbd>
-            </button>
+          <Link to='/project'>
+          <button className="group flex w-full items-center gap-2 rounded-lg py-1.5 px-3 data-[focus]:bg-white/10">
+            Projects
+            <kbd className="ml-auto hidden font-sans text-xs text-white/50 group-data-[focus]:inline">⌘E</kbd>
+          </button>
+        </Link>
           </MenuItem>
           <MenuItem>
+          <Link to='/project/single'>
             <button className="group flex w-full items-center gap-2 rounded-lg py-1.5 px-3 data-[focus]:bg-white/10">
-              {/* <Square2StackIcon className="size-4 fill-white/30" /> */}
-              Duplicate
+            
+              Single Projects
               <kbd className="ml-auto hidden font-sans text-xs text-white/50 group-data-[focus]:inline">⌘D</kbd>
             </button>
+            </Link>
           </MenuItem>
           <div className="my-1 h-px bg-white/5" />
           <MenuItem>
             <button className="group flex w-full items-center gap-2 rounded-lg py-1.5 px-3 data-[focus]:bg-white/10">
-              {/* <ArchiveBoxXMarkIcon className="size-4 fill-white/30" /> */}
+            
               Archive
               <kbd className="ml-auto hidden font-sans text-xs text-white/50 group-data-[focus]:inline">⌘A</kbd>
             </button>
           </MenuItem>
           <MenuItem>
             <button className="group flex w-full items-center gap-2 rounded-lg py-1.5 px-3 data-[focus]:bg-white/10">
-              {/* <TrashIcon className="size-4 fill-white/30" /> */}
+             
               Delete
               <kbd className="ml-auto hidden font-sans text-xs text-white/50 group-data-[focus]:inline">⌘D</kbd>
             </button>
@@ -122,7 +126,8 @@ const NavBarMenu = () => {
             <ul className='p-8 text-xl flex flex-col'>
               <Link to={'/'} className='p-2 hover:bg-white/10 rounded-md'>Home</Link>
               <Link to={'/about'} className='p-2 hover:bg-white/10 rounded-md'>About</Link>
-              <Link to={'/projec'} className='p-2 hover:bg-white/10 rounded-md'>Project</Link>
+              <Link to={'/services'} className='p-2 hover:bg-white/10 rounded-md'>Services</Link>
+              <Link  className='p-2 hover:bg-white/10 rounded-md'>Project</Link>
               <Link to={'/contact'} className='p-2 hover:bg-white/10 rounded-md'>Contact</Link>
               <ul className='flex justify-between pt-3'>
             <li><FaInstagram  className='text-2xl hover:text-yellow-600'/></li>
@@ -165,6 +170,7 @@ const NavBarMenu = () => {
       </div>
 
           </div>
+    </div>
     
   )
 }

@@ -10,7 +10,6 @@ const CustomPrevArrow = (props) => (
   <button
     {...props}
     className="absolute top-1/2 left-4 transform -translate-y-1/2 p-2 bg-gray-800 text-white rounded-full shadow-lg z-10"
-    style={{ zIndex: 10 }}
   >
     <AiOutlineLeft className="text-2xl" />
   </button>
@@ -20,7 +19,6 @@ const CustomNextArrow = (props) => (
   <button
     {...props}
     className="absolute top-1/2 right-4 transform -translate-y-1/2 p-2 bg-gray-800 text-white rounded-full shadow-lg z-10"
-    style={{ zIndex: 10 }}
   >
     <AiOutlineRight className="text-2xl" />
   </button>
@@ -31,7 +29,7 @@ const Carousel = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: 2, // Default to 2 items per slide
     slidesToScroll: 2,
     autoplay: true,
     autoplaySpeed: 3000,
@@ -39,13 +37,13 @@ const Carousel = () => {
     nextArrow: <CustomNextArrow />,
     responsive: [
       {
-        breakpoint: 768, // sm screen and smaller
+        breakpoint: 768, // For small screens
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-        }
-      }
-    ]
+        },
+      },
+    ],
   };
 
   const data = [
@@ -68,11 +66,11 @@ const Carousel = () => {
   ];
 
   return (
-    <div className="relative max-w-[1024px] mx-auto mt-[100px]">
+    <div className="relative max-w-[1024px] mx-auto py-20 px-4 lg:px-0">
       <Slider {...settings}>
         {data.map((item, index) => (
-          <div className='flex justify-center' key={index} style={{ margin: '0' }}>
-            <div className='p-4 md:p-6 lg:p-8 text-white w-full max-w-[400px] md:w-full h-auto md:h-[425px]' style={{ backgroundColor: item.bgColor }}>
+          <div className='' key={index}>
+            <div className='p-8 md:p-6 lg:p-10 text-white ' style={{ backgroundColor: item.bgColor }}>
               <div className='flex items-center gap-2'>
                 <img src={item.img} alt={item.name} className="w-16 h-16 object-cover rounded-full" />
                 <div>

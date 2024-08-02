@@ -3,10 +3,12 @@ import logo from "../.././assets/images/Logo (8).png";
 import { GoClock } from "react-icons/go";
 import { AiOutlineMail } from "react-icons/ai";
 import { IoCallOutline } from "react-icons/io5";
+import NavBarMenu from './NavBarMenu';
 
 const NavHeader = () => {
   return (
-    <div className='flex justify-between  h-[68px] gap-24 pt-[22px] md:pt-[40px] px-4 '>
+    <div className='fixed bg-[#091242] w-full h-[120px] '>
+      <div className='flex justify-between max-w-[1024px] text-white mx-auto  h-[68px] gap-24 pt-[22px] md:pt-[40px] px-4'>
       <div className='logo'>
         <img className='h-[36px]' src={logo} alt='logo'/>
 
@@ -43,6 +45,10 @@ const NavHeader = () => {
         </div>
 
       </div>
+      
+    </div>
+    
+    
     </div>
   )
 }

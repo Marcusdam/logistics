@@ -2,6 +2,9 @@ import React from 'react';
 import Photo1 from "../../assets/images/Photo (10).png";
 import Photo2 from "../../assets/images/Photo (11).png";
 import Photo3 from "../../assets/images/Photo (12).png";
+import Photo4 from "../../assets/images/Photo (12).png";
+import Photo5 from "../../assets/images/Photo (12).png";
+import Photo6 from "../../assets/images/Photo (12).png";
 import { FaInstagram } from "react-icons/fa";
 import { CiFacebook } from "react-icons/ci";
 import { CiTwitter } from "react-icons/ci";
@@ -12,6 +15,9 @@ const Team = () => {
         { img: Photo1, name: 'Liquid Transportation', description: 'Designer' },
         { img: Photo2, name: 'Packaging Solutions', description: 'Designer' },
         { img: Photo3, name: 'Contract Logistics', description: 'Designer' },
+        { img: Photo4, name: 'Contract Logistics', description: 'Designer' },
+        { img: Photo4, name: 'Contract Logistics', description: 'Designer' },
+        { img: Photo6, name: 'Contract Logistics', description: 'Designer' },
     ];
 
     return (

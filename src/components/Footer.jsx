@@ -1,14 +1,11 @@
 import React from 'react'
-import FooterImg from "../assets/images/Image (4).png"
 import FooterContent from './FooterContent'
 
 const Footer = () => {
   return (
     <section>
-      <div className='mt-[100px]'>
-        <div>
-        <img src={FooterImg} alt="" />
-        </div>
+      <div className=''>
+        
         <div className='bg-[#091242] '>
         <FooterContent/>  
         <div >
